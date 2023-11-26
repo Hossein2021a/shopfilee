@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+@import url(../public/css/fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+
+* {
+  font-family: IRANSansXFaNum, "Open Sans", sans-serif !important;
+  box-sizing: border-box !important;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: IRANSansXFaNum, "Open Sans", sans-serif !important;
+  box-sizing: border-box !important;
+  direction: rtl;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+  font-family: IRANSansXFaNum, "Open Sans", sans-serif !important;
+}
+h1 {
+  font-weight: bold;
+}
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.ltr {
+  direction: ltr;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-small {
+  font-size: 0.8em;
+}
+.text-xsmall {
+  font-size: 0.6em;
+}
+.text-large {
+  font-size: 1.2em;
+}
+.text-xlarge {
+  font-size: 1.4em;
+}
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+.text-UltraLight {
+  font-weight: 200;
+}
+.text-light {
+  font-weight: 300;
+}
+.text-regular {
+  font-weight: 400;
+}
+.text-medium {
+  font-weight: 500;
+}
+.text-demibold {
+  font-weight: 600;
+}
+.text-bold {
+  font-weight: 700;
+}
+
+.text-extrabold {
+  font-weight: 800;
+}
+.text-bolded {
+  font-weight: 900;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  color: #afd1f7;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  color: #afd1f7;
+}
+
+.swiper-horizontal.swiper-rtl > .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+  transition: 200ms transform, 200ms right;
+  width: 16px;
+  border-radius: 10px;
+  height: 7px;
+  background: #fff;
+}
+
+
+
+div:where(.swal2-container) h2:where(.swal2-title) {
+
+  font-size: 22px !important;
+}
+div:where(.swal2-container) button:where(.swal2-styled) {
+  font-size: 14px !important;
+}
+div:where(.swal2-container) div:where(.swal2-popup) {
+
+  width: 22em !important;
+
+}
+
+.swiper-slide , .swiper-slide-active{
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.fullpro{
+  width: 300px !important;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+*:focus {
+  outline: none;
+}
